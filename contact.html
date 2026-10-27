@@ -22,12 +22,29 @@
     </nav>
   </header>
 
-  <main>
-    <section>
+      <section>
       <h2>Contact Us</h2>
       <p>Tell us about your clinic and we will get back to you.</p>
+
+      <form action="/contact" method="post">
+        <p>
+          <label for="name">Full name</label><br>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </p>
+
+        <p>
+          <label for="email">Email</label><br>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </p>
+
+        <p>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" minlength="20" required></textarea>
+        </p>
+
+        <button type="submit">Send message</button>
+      </form>
     </section>
-  </main>
 
   <footer>
     <p>© 2026 HealthLink. All rights reserved.</p>
