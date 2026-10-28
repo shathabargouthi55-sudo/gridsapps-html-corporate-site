@@ -21,12 +21,7 @@
       <a href="gallery.html">Gallery</a>
     </nav>
   </header>
-
-      <section>
-      <h2>Contact Us</h2>
-      <p>Tell us about your clinic and we will get back to you.</p>
-
-      <form action="/contact" method="post">
+       <form action="/contact" method="post">
         <p>
           <label for="name">Full name</label><br>
           <input id="name" name="name" type="text" autocomplete="name" required>
@@ -38,14 +33,53 @@
         </p>
 
         <p>
+          <label for="phone">Phone</label><br>
+          <input id="phone" name="phone" type="tel" autocomplete="tel">
+        </p>
+
+        <p>
+          <label for="company">Company / Clinic</label><br>
+          <input id="company" name="company" type="text" autocomplete="organization">
+        </p>
+
+        <p>
+          <label for="country">Country</label><br>
+          <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="palestine">Palestine</option>
+            <option value="jordan">Jordan</option>
+            <option value="egypt">Egypt</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="service">Service</label><br>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="booking">Appointment booking</option>
+            <option value="records">Electronic patient records</option>
+            <option value="dashboard">Follow-up dashboards</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="subject">Subject</label><br>
+          <input id="subject" name="subject" type="text" required>
+        </p>
+
+        <p>
           <label for="message">Message</label><br>
           <textarea id="message" name="message" minlength="20" required></textarea>
         </p>
 
+        <p>
+          <input id="terms" name="terms" type="checkbox" required>
+          <label for="terms">I agree to the <a href="terms.html">Terms &amp; Conditions</a></label>
+        </p>
+
         <button type="submit">Send message</button>
       </form>
-    </section>
-
   <footer>
     <p>© 2026 HealthLink. All rights reserved.</p>
     <p>Email: <a href="mailto:info@healthlink.example">info@healthlink.example</a></p>
