@@ -8,20 +8,24 @@
 </head>
 <body>
   <header>
-    <h1>HealthLink</h1>
+    <p><strong>HealthLink</strong></p>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="products.html">Products</a>
       <a href="blog.html">Blog</a>
-      <a href="contact.html" aria-current="page">Contact</a>
-      <a href="privacy.html">Privacy Policy</a> | 
-      <a href="terms.html">Terms &amp; Conditions</a>
       <a href="gallery.html">Gallery</a>
+      <a href="contact.html" aria-current="page">Contact</a>
     </nav>
   </header>
-       <form action="/contact" method="post">
+
+  <main>
+    <section>
+      <h1>Contact Us</h1>
+      <p>Tell us about your clinic and we will get back to you.</p>
+
+      <form action="/contact" method="post">
         <p>
           <label for="name">Full name</label><br>
           <input id="name" name="name" type="text" autocomplete="name" required>
@@ -80,8 +84,12 @@
 
         <button type="submit">Send message</button>
       </form>
+    </section>
+  </main>
+
   <footer>
     <p>© 2026 HealthLink. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms &amp; Conditions</a></p>
     <p>Email: <a href="mailto:info@healthlink.example">info@healthlink.example</a></p>
     <p>Phone: <a href="tel:+970000000000">+970 00 000 0000</a></p>
   </footer>
