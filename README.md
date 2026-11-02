@@ -1,30 +1,26 @@
-# HealthLink Corporate Website
+# HealthLink — HTML Forms & Multi-Page Architecture
 
-A multi-page corporate website for HealthLink, a fictional digital health company. Built with semantic HTML5 as part of the Grids Apps Full Stack Web Development Internship (Document 01).
+A multi-page website for HealthLink, a fictional digital health company. Developed using HTML5 as part of the Grids Apps Full Stack Web Development Internship — Day 02.
 
 ## Pages
 
-- Home
-- About
-- Services
-- Service Detail
-- Products (plans comparison table)
-- Blog
-- Blog Detail
-- Gallery
-- Contact (form with native validation)
-- Privacy Policy
-- Terms & Conditions
+- **Home** (`index.html`) — Introduction to HealthLink and its services.
+- **About** (`about.html`) — Company mission, vision, and core values.
+- **Services** (`services.html`) — Digital healthcare services and a service overview table.
+- **Blog** (`blog.html`) — Articles about digital healthcare and technology.
+- **Contact** (`contact.html`) — Contact form with HTML5 native validation.
+- **Registration** (`registration.html`) — Registration form with grouped controls and HTML5 validation.
 
 ## Features
 
-- Semantic structure: header, nav, main, section, article, aside, footer
-- One h1 per page and a logical heading hierarchy
-- Unique title and meta description on every page
-- Consistent navigation with the current page marked
-- Lists, figures with captions, and an accessible comparison table
-- Contact form with labels, grouped options and native validation
-- Descriptive alt text on all images
+- Semantic HTML5 structure using elements such as `header`, `nav`, `main`, `section`, `article`, and `footer`.
+- Navigation links connecting the website pages.
+- Page-specific titles and meta descriptions.
+- Forms using labels, appropriate input types, and native HTML5 validation.
+- Registration fields grouped using `fieldset` and `legend`.
+- HTML5 validation attributes such as `required`, `pattern`, `minlength`, and `maxlength`.
+- A service overview table with a caption and accessible column headings.
+- Images with descriptive alternative text and captions.
 
 ## Technologies
 
@@ -32,38 +28,31 @@ A multi-page corporate website for HealthLink, a fictional digital health compan
 
 ## How to Run
 
-1. Clone the repository.
-2. Open the project folder in VS Code.
-3. Right-click `index.html` and choose "Open with Live Server", or open `index.html` directly in a browser.
+1. Clone or download the repository.
+2. Open the project folder in Visual Studio Code.
+3. Open `index.html` using Live Server or directly in a web browser.
 
-## Folder Structure
+## Important Notes
 
-    gridsapps-html-corporate-site/
-    ├── index.html
-    ├── about.html
-    ├── services.html
-    ├── service-detail.html
-    ├── products.html
-    ├── blog.html
-    ├── blog-detail.html
-    ├── gallery.html
-    ├── contact.html
-    ├── privacy.html
-    ├── terms.html
-    ├── assets/
-    │   ├── images/
-    │   ├── icons/
-    │   ├── css/
-    │   └── js/
-    └── labs/
-        └── doc-01-html/
-            └── h01-profile.html
+The contact and registration forms currently demonstrate front-end HTML5 validation. They are not connected to a backend, so messages are not actually sent and user accounts are not created.
+ 
+ # Day 02 — Exit Ticket
 
-## Screenshots
+**1. What did I build today?**
 
-![Home page](assets/images/screenshots/home.png)
-![Products page](assets/images/screenshots/products.png)
-![Contact page](assets/images/screenshots/contact.png)
+I built a multi-page HealthLink website using HTML5. It includes Home, About, Services, Blog, Contact, and Registration pages, along with contact and registration forms.
+
+**2. What bug or difficulty did I solve?**
+
+I worked on connecting the pages using relative paths and ensuring that the navigation links worked across the website.
+
+**3. What concept can I explain clearly?**
+
+I can explain HTML forms, labels, input types, fieldsets, legends, and native HTML5 validation using attributes such as `required`, `pattern`, and `minlength`.
+
+**4. What remains incomplete?**
+
+The forms currently provide front-end validation only. They are not connected to a backend to process submissions or create user accounts.
 
 ## Author
 
