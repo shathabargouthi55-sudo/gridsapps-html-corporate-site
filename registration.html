@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register with HealthLink to explore digital healthcare services and manage your account information.">
+    <title>Create an Account | HealthLink</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>HealthLink</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="registration.html" aria-current="page">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Create Your HealthLink Account</h2>
+
+            <p>
+                Complete the registration form below to provide your
+                account, contact, and preference information.
+            </p>
+
+            <p>Fields marked with * are required.</p>
+        </section>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>1. Personal Information</legend>
+
+                <div>
+                    <label for="first-name">First Name: *</label>
+                    <input
+                        type="text"
+                        id="first-name"
+                        name="first_name"
+                        autocomplete="given-name"
+                        minlength="2"
+                        maxlength="50"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="last-name">Last Name: *</label>
+                    <input
+                        type="text"
+                        id="last-name"
+                        name="last_name"
+                        autocomplete="family-name"
+                        minlength="2"
+                        maxlength="50"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="date-of-birth">Date of Birth: *</label>
+                    <input
+                        type="date"
+                        id="date-of-birth"
+                        name="date_of_birth"
+                        autocomplete="bday"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="">Prefer not to say</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="profile-picture">Profile Picture:</label>
+                    <input
+                        type="file"
+                        id="profile-picture"
+                        name="profile_picture"
+                        accept="image/png, image/jpeg, image/webp"
+                    >
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Contact Information</legend>
+
+                <div>
+                    <label for="registration-email">Email Address: *</label>
+                    <input
+                        type="email"
+                        id="registration-email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="confirm-email">Confirm Email Address: *</label>
+                    <input
+                        type="email"
+                        id="confirm-email"
+                        name="confirm_email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="phone-number">Phone Number: *</label>
+                    <input
+                        type="tel"
+                        id="phone-number"
+                        name="phone"
+                        autocomplete="tel"
+                        pattern="[0-9+() -]{7,20}"
+                        title="Enter a valid phone number using digits, spaces, +, parentheses, or hyphens."
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="country">Country: *</label>
+                    <select id="country" name="country" autocomplete="country-name" required>
+                        <option value="">Select your country</option>
+                        <option value="palestine">Palestine</option>
+                        <option value="jordan">Jordan</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="city">City: *</label>
+                    <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        autocomplete="address-level2"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="address">Street Address:</label>
+                    <input
+                        type="text"
+                        id="address"
+                        name="address"
+                        autocomplete="street-address"
+                        maxlength="200"
+                    >
+                </div>
+
+                <div>
+                    <label for="postal-code">Postal Code:</label>
+                    <input
+                        type="text"
+                        id="postal-code"
+                        name="postal_code"
+                        autocomplete="postal-code"
+                        maxlength="20"
+                    >
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Account Security</legend>
+
+                <div>
+                    <label for="username">Username: *</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        autocomplete="username"
+                        pattern="[A-Za-z0-9_]{4,20}"
+                        title="Use 4 to 20 letters, numbers, or underscores."
+                        minlength="4"
+                        maxlength="20"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="password">Password: *</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        maxlength="64"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="confirm-password">Confirm Password: *</label>
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm_password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        maxlength="64"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="security-question">Security Question: *</label>
+                    <select id="security-question" name="security_question" required>
+                        <option value="">Select a question</option>
+                        <option value="first-school">What was the name of your first school?</option>
+                        <option value="favorite-book">What is your favorite book?</option>
+                        <option value="first-pet">What was the name of your first pet?</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="security-answer">Security Answer: *</label>
+                    <input
+                        type="text"
+                        id="security-answer"
+                        name="security_answer"
+                        minlength="2"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Preferences</legend>
+
+                <p>Preferred contact method: *</p>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="contact-email"
+                        name="preferred_contact"
+                        value="email"
+                        required
+                    >
+                    <label for="contact-email">Email</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="contact-phone"
+                        name="preferred_contact"
+                        value="phone"
+                    >
+                    <label for="contact-phone">Phone</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="contact-sms"
+                        name="preferred_contact"
+                        value="sms"
+                    >
+                    <label for="contact-sms">SMS</label>
+                </div>
+
+                <div>
+                    <label for="language">Preferred Language: *</label>
+                    <select id="language" name="language" required>
+                        <option value="">Select a language</option>
+                        <option value="english">English</option>
+                        <option value="arabic">Arabic</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="registration-reason">Why are you joining HealthLink?</label>
+                    <textarea
+                        id="registration-reason"
+                        name="registration_reason"
+                        rows="4"
+                        maxlength="500"
+                    ></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. Terms and Notifications</legend>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="newsletter"
+                        name="newsletter"
+                        value="yes"
+                    >
+                    <label for="newsletter">
+                        I would like to receive HealthLink updates.
+                    </label>
+                </div>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        value="accepted"
+                        required
+                    >
+                    <label for="terms">
+                        I agree to the Terms and Conditions. *
+                    </label>
+                </div>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="privacy"
+                        name="privacy"
+                        value="accepted"
+                        required
+                    >
+                    <label for="privacy">
+                        I have read the Privacy Policy. *
+                    </label>
+                </div>
+            </fieldset>
+
+            <div>
+                <button type="submit">Create Account</button>
+                <button type="reset">Reset Form</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HealthLink. All rights reserved.</p>
+        <p>
+            <a href="contact.html">Contact Us</a> |
+            <a href="index.html">Home</a>
+        </p>
+    </footer>
+
+</body>
+</html>
