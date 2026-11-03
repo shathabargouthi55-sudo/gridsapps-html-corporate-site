@@ -13,7 +13,7 @@ A multi-page website for HealthLink, a fictional digital health company. Built a
 
 ## Features
 
-### HTML
+## HTML
 - Semantic HTML5 structure using `header`, `nav`, `main`, `section`, `article`, and `footer`.
 - Navigation links connecting all pages.
 - Page-specific titles and meta descriptions.
