@@ -79,13 +79,46 @@ main section {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--space-md);
 }
 
 .card {
-  flex: 1;
+  flex: 1 1 280px;
   background-color: var(--color-white);
   border: 1px solid #d5e0e8;
   border-radius: 8px;
   padding: var(--space-md);
+}
+footer {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--space-md);
+}
+
+footer a {
+  color: var(--color-white);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-white);
+}
+
+caption {
+  font-weight: bold;
+  padding: var(--space-sm);
+}
+
+th,
+td {
+  border: 1px solid #d5e0e8;
+  padding: var(--space-sm) var(--space-md);
+  text-align: left;
+}
+
+th {
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
