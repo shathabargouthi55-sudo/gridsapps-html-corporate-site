@@ -1,6 +1,6 @@
-# HealthLink — HTML Forms & Multi-Page Architecture
+# HealthLink — Multi-Page Corporate Website
 
-A multi-page website for HealthLink, a fictional digital health company. Developed using HTML5 as part of the Grids Apps Full Stack Web Development Internship — Day 02.
+A multi-page website for HealthLink, a fictional digital health company. Built as part of the Grids Apps Full Stack Web Development Internship (HTML5 and CSS foundations).
 
 ## Pages
 
@@ -13,18 +13,44 @@ A multi-page website for HealthLink, a fictional digital health company. Develop
 
 ## Features
 
-- Semantic HTML5 structure using elements such as `header`, `nav`, `main`, `section`, `article`, and `footer`.
-- Navigation links connecting the website pages.
+### HTML
+- Semantic HTML5 structure using `header`, `nav`, `main`, `section`, `article`, and `footer`.
+- Navigation links connecting all pages.
 - Page-specific titles and meta descriptions.
-- Forms using labels, appropriate input types, and native HTML5 validation.
-- Registration fields grouped using `fieldset` and `legend`.
-- HTML5 validation attributes such as `required`, `pattern`, `minlength`, and `maxlength`.
+- Forms using labels, appropriate input types, `fieldset`/`legend`, and native validation (`required`, `pattern`, `minlength`, `maxlength`).
 - A service overview table with a caption and accessible column headings.
 - Images with descriptive alternative text and captions.
+
+### CSS
+- A single external stylesheet (`assets/css/style.css`) shared by all pages, with no inline styles.
+- Design tokens defined as CSS variables in `:root` (colors, spacing, typography).
+- Global `box-sizing: border-box` reset.
+- Styled header and navigation, hero section, cards, and footer.
 
 ## Technologies
 
 - HTML5
+- CSS3 (custom properties)
+
+## Project Structure
+
+```text
+gridsapps-html-corporate-site/
+├── assets/
+│   ├── css/style.css
+│   ├── images/
+│   ├── icons/
+│   └── js/
+├── docs/
+│   └── exit-tickets.md
+├── index.html
+├── about.html
+├── services.html
+├── blog.html
+├── contact.html
+├── registration.html
+└── README.md
+
 
 ## How to Run
 
@@ -34,25 +60,7 @@ A multi-page website for HealthLink, a fictional digital health company. Develop
 
 ## Important Notes
 
-The contact and registration forms currently demonstrate front-end HTML5 validation. They are not connected to a backend, so messages are not actually sent and user accounts are not created.
- 
- # Day 02 — Exit Ticket
-
-**1. What did I build today?**
-
-I built a multi-page HealthLink website using HTML5. It includes Home, About, Services, Blog, Contact, and Registration pages, along with contact and registration forms.
-
-**2. What bug or difficulty did I solve?**
-
-I worked on connecting the pages using relative paths and ensuring that the navigation links worked across the website.
-
-**3. What concept can I explain clearly?**
-
-I can explain HTML forms, labels, input types, fieldsets, legends, and native HTML5 validation using attributes such as `required`, `pattern`, and `minlength`.
-
-**4. What remains incomplete?**
-
-The forms currently provide front-end validation only. They are not connected to a backend to process submissions or create user accounts.
+The contact and registration forms demonstrate front-end HTML5 validation only. They are not connected to a backend, so messages are not sent and accounts are not created.
 
 ## Author
 
