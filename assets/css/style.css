@@ -1,0 +1,22 @@
+:root {
+  /* Colors */
+  --color-primary: #0b6e8a;
+  --color-primary-dark: #084c61;
+  --color-bg: #f4f8fb;
+  --color-text: #1f2d3a;
+  --color-white: #ffffff;
+
+  /* Spacing */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+
+  /* Typography */
+  --font-main: Arial, sans-serif;
+}
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  margin: 0;
+}
