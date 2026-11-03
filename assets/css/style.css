@@ -47,3 +47,45 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+.hero {
+  background-color: var(--color-primary-dark);
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.hero h2,
+.hero p {
+  color: var(--color-white);
+}
+
+.hero a {
+  display: inline-block;
+  background-color: var(--color-white);
+  color: var(--color-primary-dark);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: 8px;
+  text-decoration: none;
+  margin: var(--space-sm);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+main section {
+  padding: var(--space-lg);
+}
+
+.cards {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.card {
+  flex: 1;
+  background-color: var(--color-white);
+  border: 1px solid #d5e0e8;
+  border-radius: 8px;
+  padding: var(--space-md);
+}
