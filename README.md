@@ -4,12 +4,12 @@ A multi-page website for HealthLink, a fictional digital health company. Built a
 
 ## Pages
 
-- **Home** (`index.html`) — Introduction to HealthLink and its services.
-- **About** (`about.html`) — Company mission, vision, and core values.
-- **Services** (`services.html`) — Digital healthcare services and a service overview table.
-- **Blog** (`blog.html`) — Articles about digital healthcare and technology.
-- **Contact** (`contact.html`) — Contact form with HTML5 native validation.
-- **Registration** (`registration.html`) — Registration form with grouped controls and HTML5 validation.
+- **Home** (`index.html`): Introduction to HealthLink and its services.
+- **About** (`about.html`): Company mission, vision, and core values.
+- **Services** (`services.html`): Digital healthcare services and a service overview table.
+- **Blog** (`blog.html`): Articles about digital healthcare and technology.
+- **Contact** (`contact.html`): Contact form with HTML5 native validation.
+- **Registration** (`registration.html`): Registration form with grouped controls and HTML5 validation.
 
 ## Features
 
@@ -25,32 +25,12 @@ A multi-page website for HealthLink, a fictional digital health company. Built a
 - A single external stylesheet (`assets/css/style.css`) shared by all pages, with no inline styles.
 - Design tokens defined as CSS variables in `:root` (colors, spacing, typography).
 - Global `box-sizing: border-box` reset.
-- Styled header and navigation, hero section, cards, and footer.
+- Styled header and navigation, hero section, cards, footer, and table.
 
 ## Technologies
 
 - HTML5
 - CSS3 (custom properties)
-
-## Project Structure
-
-```text
-gridsapps-html-corporate-site/
-├── assets/
-│   ├── css/style.css
-│   ├── images/
-│   ├── icons/
-│   └── js/
-├── docs/
-│   └── exit-tickets.md
-├── index.html
-├── about.html
-├── services.html
-├── blog.html
-├── contact.html
-├── registration.html
-└── README.md
-
 
 ## How to Run
 
