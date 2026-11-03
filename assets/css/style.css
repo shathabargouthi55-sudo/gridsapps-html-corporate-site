@@ -15,8 +15,35 @@
   --font-main: Arial, sans-serif;
 }
 body {
+  margin: 0;
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-main);
+}
+header {
+  background-color: var(--color-primary);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: var(--color-white);
   margin: 0;
+}nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--space-md);
+}
+
+nav a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
