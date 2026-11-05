@@ -13,7 +13,7 @@ A multi-page website for HealthLink, a fictional digital health company. Built a
 
 ## Features
 
-##  HTML
+### HTML
 - Semantic HTML5 structure using `header`, `nav`, `main`, `section`, `article`, and `footer`.
 - Navigation links connecting all pages.
 - Page-specific titles and meta descriptions.
@@ -27,10 +27,22 @@ A multi-page website for HealthLink, a fictional digital health company. Built a
 - Global `box-sizing: border-box` reset.
 - Styled header and navigation, hero section, cards, footer, and table.
 
+### Responsive Design
+- Responsive navbar using Flexbox: the logo and links stack and wrap on small screens.
+- Mobile-first card grid using CSS Grid: 1 column on mobile, 2 columns from 600px, and 3 columns from 992px.
+- Media queries for tablet and desktop layouts.
+- Checked for horizontal overflow on mobile.
+
+## Screenshots
+
+| Mobile | Tablet | Desktop |
+|---|---|---|
+| ![Mobile](screenshots/mobile.png) | ![Tablet](screenshots/tablet.png) | ![Desktop](screenshots/desktop.png) |
+
 ## Technologies
 
 - HTML5
-- CSS3 (custom properties)
+- CSS3 (custom properties, Flexbox, Grid, media queries)
 
 ## How to Run
 
