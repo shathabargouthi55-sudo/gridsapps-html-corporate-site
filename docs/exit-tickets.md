@@ -34,3 +34,20 @@ The hero section was not styled because its closing `</section>` tag was on the 
 **4. What remains incomplete?**
 
 The specificity debugging challenge is not completed yet. I still need to practice how the cascade and specificity decide which CSS rule wins. The other pages (About, Blog, Contact, Registration) only have the shared base, header, and footer styles for now.
+## Day 04 — Flexbox, Grid & Responsive Design
+
+**1. What did I build today?**
+
+I made the HealthLink site responsive. I built a responsive navbar with Flexbox and a card grid with CSS Grid that shows 1, 2, or 3 columns depending on the screen size. I also took mobile, tablet, and desktop screenshots.
+
+**2. What bug/difficulty did I solve?**
+
+I checked the pages at different screen sizes and made sure there was no horizontal scrolling. I also changed the cards from Flexbox to Grid so the columns change clearly at each screen size.
+
+**3. What concept can I explain clearly?**
+
+Media queries apply CSS only at certain screen widths. I use Flexbox to arrange items in one line (like the navbar) and Grid to arrange items in rows and columns (like the cards).
+
+**4. What remains incomplete?**
+
+---------------
