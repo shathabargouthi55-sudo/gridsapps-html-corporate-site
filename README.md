@@ -37,7 +37,7 @@ A multi-page website for HealthLink, a fictional digital health company. Built a
 
 | Mobile | Tablet | Desktop |
 |---|---|---|
-| ![Mobile](screenshots/mobile.png) | ![Tablet](screenshots/tablet.png) | ![Desktop](screenshots/desktop.png) |
+| ![Mobile](assets/images/screenshots/mobile.png) | ![Tablet](assets/images/screenshots/tablet.png) | ![Desktop](assets/images/screenshots/desktop.png) |
 
 ## Technologies
 
