@@ -1,3 +1,4 @@
+
 :root {
   /* Colors */
   --color-primary: #0b6e8a;
@@ -14,12 +15,14 @@
   /* Typography */
   --font-main: Arial, sans-serif;
 }
+
 body {
   margin: 0;
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-main);
 }
+
 header {
   background-color: var(--color-primary);
   padding: var(--space-md) var(--space-lg);
@@ -31,7 +34,9 @@ header {
 header h1 {
   color: var(--color-white);
   margin: 0;
-}nav ul {
+}
+
+nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -47,6 +52,7 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
 .hero {
   background-color: var(--color-primary-dark);
   padding: var(--space-lg);
@@ -67,6 +73,7 @@ nav a:hover {
   text-decoration: none;
   margin: var(--space-sm);
 }
+
 *,
 *::before,
 *::after {
@@ -78,18 +85,18 @@ main section {
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: var(--space-md);
 }
 
 .card {
-  flex: 1 1 280px;
   background-color: var(--color-white);
   border: 1px solid #d5e0e8;
   border-radius: 8px;
   padding: var(--space-md);
 }
+
 footer {
   background-color: var(--color-primary-dark);
   color: var(--color-white);
@@ -100,6 +107,7 @@ footer {
 footer a {
   color: var(--color-white);
 }
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -121,4 +129,30 @@ td {
 th {
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
