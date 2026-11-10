@@ -51,3 +51,20 @@ Media queries apply CSS only at certain screen widths. I use Flexbox to arrange 
 **4. What remains incomplete?**
 
 ---------------
+## Day 05 — HTML/CSS Project Delivery
+
+**1. What did I build today?**
+
+I finished the HealthLink website as a 10-page responsive site. I added four new pages (Team, FAQ, Careers, and Privacy), connected all pages through the navigation and footer, styled the contact and registration forms, and updated the README for the final project. I also tested keyboard navigation with the Tab key to check the focus styles.
+
+**2. What bug/difficulty did I solve?**
+
+My first form CSS used `form div`, which styled every `div` inside the forms in the same way. This made the radio buttons appear vertically and gave the buttons container the same style as the input fields. I fixed it by adding specific classes (`form-group`, `radio-group`, `form-actions`) and styling those instead. I also fixed a duplicated `<ul>` inside the navigation of the contact page.
+
+**3. What concept can I explain clearly?**
+
+Tag selectors style all elements of one type, while class selectors style only the elements I choose. I used tag selectors for the header and footer, which appear on every page, and classes for things like cards and form groups. I can also explain how one external stylesheet linked in the `<head>` of each page styles the whole website.
+
+**4. What remains incomplete?**
+
+----
