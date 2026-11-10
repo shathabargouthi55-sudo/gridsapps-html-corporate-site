@@ -160,3 +160,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+details {
+  background-color: var(--color-white);
+  border: 1px solid #d5e0e8;
+  border-radius: 8px;
+  padding: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
