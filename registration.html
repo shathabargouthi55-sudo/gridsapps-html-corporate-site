@@ -17,8 +17,11 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="team.html">Team</a></li><li><a href="blog.html">Blog</a></li>
-                <li><a href="careers.html">Careers</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="registration.html" aria-current="page">Register</a></li>
             </ul>
         </nav>
@@ -41,7 +44,7 @@
             <fieldset>
                 <legend>1. Personal Information</legend>
 
-                <div>
+                <div class="form-group">
                     <label for="first-name">First Name: *</label>
                     <input
                         type="text"
@@ -54,7 +57,7 @@
                     >
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="last-name">Last Name: *</label>
                     <input
                         type="text"
@@ -67,7 +70,7 @@
                     >
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="date-of-birth">Date of Birth: *</label>
                     <input
                         type="date"
@@ -78,7 +81,7 @@
                     >
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="gender">Gender:</label>
                     <select id="gender" name="gender">
                         <option value="">Prefer not to say</option>
@@ -88,7 +91,7 @@
                     </select>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="profile-picture">Profile Picture:</label>
                     <input
                         type="file"
@@ -102,7 +105,7 @@
             <fieldset>
                 <legend>2. Contact Information</legend>
 
-                <div>
+                <div class="form-group">
                     <label for="registration-email">Email Address: *</label>
                     <input
                         type="email"
@@ -113,7 +116,7 @@
                     >
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="confirm-email">Confirm Email Address: *</label>
                     <input
                         type="email"
@@ -124,7 +127,7 @@
                     >
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="phone-number">Phone Number: *</label>
                     <input
                         type="tel"
@@ -137,7 +140,7 @@
                     >
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="country">Country: *</label>
                     <select id="country" name="country" autocomplete="country-name" required>
                         <option value="">Select your country</option>
@@ -147,7 +150,7 @@
                     </select>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="city">City: *</label>
                     <input
                         type="text"
@@ -159,7 +162,7 @@
                     >
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="address">Street Address:</label>
                     <input
                         type="text"
@@ -170,7 +173,7 @@
                     >
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="postal-code">Postal Code:</label>
                     <input
                         type="text"
@@ -185,7 +188,7 @@
             <fieldset>
                 <legend>3. Account Security</legend>
 
-                <div>
+                <div class="form-group">
                     <label for="username">Username: *</label>
                     <input
                         type="text"
@@ -200,7 +203,7 @@
                     >
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="password">Password: *</label>
                     <input
                         type="password"
@@ -213,7 +216,7 @@
                     >
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="confirm-password">Confirm Password: *</label>
                     <input
                         type="password"
@@ -226,7 +229,7 @@
                     >
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="security-question">Security Question: *</label>
                     <select id="security-question" name="security_question" required>
                         <option value="">Select a question</option>
@@ -236,7 +239,7 @@
                     </select>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="security-answer">Security Answer: *</label>
                     <input
                         type="text"
@@ -254,38 +257,40 @@
 
                 <p>Preferred contact method: *</p>
 
-                <div>
-                    <input
-                        type="radio"
-                        id="contact-email"
-                        name="preferred_contact"
-                        value="email"
-                        required
-                    >
-                    <label for="contact-email">Email</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input
+                            type="radio"
+                            id="contact-email"
+                            name="preferred_contact"
+                            value="email"
+                            required
+                        >
+                        <label for="contact-email">Email</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input
+                            type="radio"
+                            id="contact-phone"
+                            name="preferred_contact"
+                            value="phone"
+                        >
+                        <label for="contact-phone">Phone</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input
+                            type="radio"
+                            id="contact-sms"
+                            name="preferred_contact"
+                            value="sms"
+                        >
+                        <label for="contact-sms">SMS</label>
+                    </div>
                 </div>
 
-                <div>
-                    <input
-                        type="radio"
-                        id="contact-phone"
-                        name="preferred_contact"
-                        value="phone"
-                    >
-                    <label for="contact-phone">Phone</label>
-                </div>
-
-                <div>
-                    <input
-                        type="radio"
-                        id="contact-sms"
-                        name="preferred_contact"
-                        value="sms"
-                    >
-                    <label for="contact-sms">SMS</label>
-                </div>
-
-                <div>
+                <div class="form-group">
                     <label for="language">Preferred Language: *</label>
                     <select id="language" name="language" required>
                         <option value="">Select a language</option>
@@ -294,7 +299,7 @@
                     </select>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="registration-reason">Why are you joining HealthLink?</label>
                     <textarea
                         id="registration-reason"
@@ -308,7 +313,7 @@
             <fieldset>
                 <legend>5. Terms and Notifications</legend>
 
-                <div>
+                <div class="form-group">
                     <input
                         type="checkbox"
                         id="newsletter"
@@ -320,7 +325,7 @@
                     </label>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <input
                         type="checkbox"
                         id="terms"
@@ -333,7 +338,7 @@
                     </label>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <input
                         type="checkbox"
                         id="privacy"
@@ -342,12 +347,12 @@
                         required
                     >
                     <label for="privacy">
-                        I have read the Privacy Policy. *
+                        I have read the <a href="privacy.html">Privacy Policy</a>. *
                     </label>
                 </div>
             </fieldset>
 
-            <div>
+            <div class="form-actions">
                 <button type="submit">Create Account</button>
                 <button type="reset">Reset Form</button>
             </div>
@@ -359,7 +364,7 @@
         <p>&copy; 2026 HealthLink. All rights reserved.</p>
         <p>
             <a href="contact.html">Contact Us</a> |
-            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
         </p>
     </footer>
 
